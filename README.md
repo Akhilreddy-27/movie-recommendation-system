@@ -1,70 +1,46 @@
-🎬 Movie Recommendation System
+## 📸 Demo
 
-This is a content-based movie recommendation system built with Python and Streamlit.
-It recommends similar movies based on a selected title using machine learning and natural language processing techniques.
+### ⚡ Quick Look (GIF)
+> A short walkthrough of searching a title and getting 5 similar recommendations.
 
-🚀 Features
+![Streamlit App Demo](assets/demo.gif)
 
-Search and select a movie
+> If you don’t have a GIF yet, record one with **ScreenToGif** (Windows) or **Kap** (macOS) and save it as `assets/demo.gif`.
 
-Get top 5 similar movies as recommendations
+---
 
-Uses cosine similarity on movie features
-
-Interactive Streamlit web app
-
-Easy to extend with more datasets
-
-🛠️ Tech Stack
-
-Python (pandas, numpy, scikit-learn)
-
-Streamlit (for UI)
-
-Pickle (for saving models/data)
-
-📂 Project Structure
-├── app.py               # Main Streamlit app
-├── movies.pkl           # Preprocessed movie metadata
-├── similarity.pkl       # Precomputed similarity matrix
-├── movie_dict.pkl       # Dictionary version of movie dataset
-└── README.md            # Project documentation
-
-⚡ Installation & Usage
-
-Clone the repo:
-
-git clone https://github.com/Akhilreddy-27/movie-recommendation-system.git
-cd movie-recommendation-system
-
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-
-Run the Streamlit app:
-
-streamlit run app.py
-
-
-Open in browser:
-
-http://localhost:8501
-
-📊 Dataset
-
-Movies metadata and credits dataset from TMDb (The Movie Database).
-
-Preprocessed and stored in movies.pkl.
-
-🔮 Future Improvements
-
-Add collaborative filtering (user-based recommendations)
-
-Integrate real-time TMDb API for movie posters and info
-
-Deploy on Streamlit Cloud / Heroku
-
-📸 Demo
+### 🖼️ Screenshots
 <img width="1919" height="831" alt="Screenshot 2025-08-17 194319" src="https://github.com/user-attachments/assets/2b8cc735-7ca5-43b4-b6a0-8f6060daf724" />
+
+
+
+> Save your PNGs in `assets/` and keep file names the same as above, or update the paths.
+
+---
+
+### 🕹️ How It Works (in the UI)
+1. **Search** for a movie in the dropdown.
+2. Click **Recommend**.
+3. See the **Top 5 similar movies** computed using **cosine similarity** over preprocessed features.
+4. (Optional) Click a recommendation to view **poster & details** (via TMDb API integration if enabled).
+
+---
+
+### 🧪 Example Output
+
+Search: **"The Dark Knight"**  
+Recommendations:
+1. **Batman Begins**
+2. **The Dark Knight Rises**
+3. **Man of Steel**
+4. **V for Vendetta**
+5. **Watchmen**
+
+*(Your exact list may vary based on preprocessing and dataset version.)*
+
+---
+
+### 🗂️ Required Files
+
+Ensure these files are present at project root:
+
